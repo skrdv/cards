@@ -1,0 +1,148 @@
+
+/* Global */
+body {
+  background: #f6f6f6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+/* Card */
+.card {
+  width: 13rem;
+  margin-bottom: 20px;
+  transition: box-shadow .3s;
+}
+
+.card:hover {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.card-body {
+  position: relative;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+
+.card-top {
+  position: relative;
+  padding-bottom: 4px;
+  text-align: left;
+}
+
+.card-user {
+  display: inline-block;
+  color: #979797;
+  cursor: pointer;
+}
+
+.card-rating {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  color: #f4b242;
+  font-weight: 600;
+}
+
+.card-rating .count {
+  color: #979797;
+  font-weight: 400;
+}
+
+.card-bottom {
+  position: relative;
+  border-top: 1px solid #ededed;
+  padding-top: 4px;
+}
+
+.card-likes {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.card-likes .fa {
+  color: #dfe0d8;
+}
+
+
+.card-likes:hover .fa {
+  color: #aaa;
+}
+
+.card-price {
+  text-align: right;
+  color: #507f2f;
+  font-weight: 700;
+}
+
+
+
+/* List */
+.card-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+/* Slider */
+.card-slider .card {
+  max-width: 13rem;
+  width: 13rem;
+}
+
+.slick-slide > div {
+  text-align: center;
+}
+
+.slick-next, 
+.slick-prev {
+  width: 50px;
+  height: 50px;
+}
+
+.slick-prev {
+  left: -55px;
+}
+
+.slick-next {
+  right: -55px;
+}
+
+.slick-next:before, 
+.slick-prev:before {
+  font-size: 50px;
+  color: #ddd;
+}
+
+
+
+/* Mobile */
+@media (max-width: 576px) {
+  .card-list .card {
+    width: 100%;
+  }
+
+  .card-slider .card {
+    max-width: 100%;
+  }
+
+}
